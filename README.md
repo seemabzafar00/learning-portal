@@ -48,4 +48,4 @@ No backend or database is connected yet — all data is stored directly in `scri
 
 ## Author
 
-Seemab Zafar & [Team Member Name] — Interns, NCAI
+Seemab Zafar & Aleesha Sadiq — Interns, NCAI
