@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learning Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <button onclick="showPage('dashboard')">Dashboard</button>
+    <button onclick="showPage('programs')">Programs</button>
+    <button onclick="showPage('resources')">Resources</button>
+    <button onclick="showPage('events')">Events</button>
+    <button onclick="showPage('certificates')">Certificates</button>
+    <button onclick="showPage('mentors')">Mentors</button>
+    <button onclick="showPage('notifications')">Notifications</button>
+  </div>
+
+  <div class="content">
+
+    <div id="page-dashboard" class="page">
+      <h1>Welcome to Learning Portal</h1>
+      <p style="color:#666; margin-top:-10px;">Your all-in-one hub for programs, resources, and progress</p>
+      <div class="cards">
+        <div class="card"><h3>Total Programs</h3><p>5</p></div>
+        <div class="card"><h3>Active Programs</h3><p>3</p></div>
+        <div class="card"><h3>Certificates</h3><p>2</p></div>
+      </div>
+    </div>
+
+    <div id="page-programs" class="page">
+      <h2 style="color:#21295C;">My Programs</h2>
+      <input type="text" id="searchBox" placeholder="Search programs..."
+        style="padding:10px; width:100%; max-width:400px; border-radius:8px; border:1px solid #ccc; margin-bottom:16px;">
+      <div id="programsList"></div>
+    </div>
+
+    <div id="page-resources" class="page">
+      <h2 style="color:#21295C;">Resource Library</h2>
+      <div id="resourcesList"></div>
+    </div>
+
+    <div id="page-events" class="page">
+      <h2 style="color:#21295C;">Upcoming Events</h2>
+      <div id="eventsList"></div>
+    </div>
+
+    <div id="page-certificates" class="page">
+      <h2 style="color:#21295C;">Certificates</h2>
+      <div id="certificatesList"></div>
+    </div>
+
+    <div id="page-mentors" class="page">
+      <h2 style="color:#21295C;">Mentors</h2>
+      <div id="mentorsList" style="display:flex; gap:16px; flex-wrap:wrap;"></div>
+    </div>
+
+    <div id="page-notifications" class="page">
+      <h2 style="color:#21295C;">Notification Settings</h2>
+      <div style="background:white; padding:20px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1); max-width:400px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid #eee;">
+          <span>Email Alerts</span><input type="checkbox" checked style="width:20px; height:20px;">
+        </div>
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid #eee;">
+          <span>SMS Reminders</span><input type="checkbox" style="width:20px; height:20px;">
+        </div>
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid #eee;">
+          <span>Push Notifications</span><input type="checkbox" checked style="width:20px; height:20px;">
+        </div>
+        <div style="display:flex; justify-content:space-between; align-items:center; padding:10px 0;">
+          <span>Weekly Summary</span><input type="checkbox" checked style="width:20px; height:20px;">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
